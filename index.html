@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="main-body">
+    <div class="wrapper">
+
+    <div class="container mdh">
+        <div class="start">
+            <form class="form-sort w-25">
+                <select class="form-select degree mb-2 elSelect">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+                
+                <select class="form-select time mb-2 elSelectMn">
+                    <option value="minut_min">3 min</option>
+                    <option value="minut_avarage">5 min</option>
+                    <option value="minut_max">7 min</option>
+                </select>
+                <button class="btn btn-primary begin" type="submit" >
+                    Begin
+                </button>
+            </form>    
+        </div> 
+        </div>
+        </div>    
+            
+            
+            <div class="modals">
+                <div class="container">
+                        <div class="text-center">
+                            <h5 class="">SAVOLLAR</h5>
+                        </div>
+                        <div class="">
+                            <div class="d-flex justify-content-between">
+                                <div class="fw-bold">Count: <span class="counter">0</span></div>
+                                <span class="timer text-white d-inline-block">00:00</span>
+                                <span class="timers text-white d-inline-block">X</span>
+                            </div>
+                            <h3 class="text-center text-bg-info my-4 py-2 savol position-fixed w-100 mt-0">
+                                
+                            </h3>
+                        </div>
+                        <ul class="lists">
+
+                        </ul>
+                    </div>
+                </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>    
+</body>
+</html>
