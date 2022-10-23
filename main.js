@@ -1,6 +1,5 @@
 let elSelect = document.querySelector(".elSelect");
 let elSelectMn = document.querySelector(".elSelectMn");
-let newFragment = document.createDocumentFragment();
 let elList = document.querySelector(".lists");
 let elModalOf = document.querySelector(".modals");
 let elBtnBegin = document.querySelector(".begin")
@@ -14,9 +13,10 @@ let score = 4;
 setInterval(myTimer, 1000);
 
 function myTimer() {
-  const date = new Date();
-  document.querySelector(".timer").textContent = date.toLocaleTimeString();
+    const date = new Date();
+    document.querySelector(".timer").textContent = date.toLocaleTimeString();
 }
+let newFragment = document.createDocumentFragment();
 
 elBtnBegin.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -80,7 +80,6 @@ function abb(arr) {
 
     elList.appendChild(newFragment)
 }
-let arrayPush = [];
 
 elList.addEventListener("click", function (evt) {
     let imgId = evt.target.dataset.id;
@@ -88,12 +87,12 @@ elList.addEventListener("click", function (evt) {
     if (imgId == elSavol.dataset.id) {
         randomFind(array);
 
-        alert("topildi");
+        alert("Topildi");
         imgaId.classList.add("none");
         elCounter.innerHTML = count += 2;
 
     } else {
-        alert("yo'q");
+        alert("Topilmadi Xato");
         elCounter.innerHTML = count -= 1;
         score--;
 
@@ -109,6 +108,5 @@ function randomFind(s) {
     let sa = s[arrLet]
     let nameFd = sa.name
     elSavol.textContent = nameFd;
-    arrayPush.push(nameFd);
     elSavol.dataset.id = sa.id;
 }
