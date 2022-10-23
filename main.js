@@ -25,18 +25,18 @@ elBtnBegin.addEventListener("click", function (evt) {
 
     if (elSelect.value == "easy") {
         elList.innerHTML = ""
-        array = shuffle(array.slice(0, 33))
+        array = shuffle(array.slice(0, 35))
         abb(array);
         randomFind(array)
 
     } else if (elSelect.value == "medium") {
         elList.innerHTML = ""
-        array = shuffle(array.slice(0, 63))
+        array = shuffle(array.slice(0, 65))
         abb(array);
         randomFind(array)
 
     } else {
-        array = shuffle(array.slice(0, 93))
+        array = shuffle(array.slice(0, 95))
         abb(array);
         randomFind(array)
     }
