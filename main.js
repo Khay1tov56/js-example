@@ -81,7 +81,6 @@ function abb(arr) {
     elList.appendChild(newFragment)
 }
 let arrayPush = [];
-let elDibs = document.querySelector(".dibs")
 
 elList.addEventListener("click", function (evt) {
     let imgId = evt.target.dataset.id;
@@ -97,7 +96,6 @@ elList.addEventListener("click", function (evt) {
         alert("yo'q");
         elCounter.innerHTML = count -= 1;
         score--;
-        console.log(score);
 
     }
     if (score === 0) {
@@ -110,7 +108,6 @@ function randomFind(s) {
     let arrLet = Math.floor(Math.random() * s.length);
     let sa = s[arrLet]
     let nameFd = sa.name
-    console.log(sa.name);
     elSavol.textContent = nameFd;
     arrayPush.push(nameFd);
     elSavol.dataset.id = sa.id;
